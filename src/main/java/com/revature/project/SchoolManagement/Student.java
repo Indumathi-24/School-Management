@@ -1,24 +1,25 @@
 package com.revature.project.SchoolManagement;
 
 public class Student {
-    Integer studentRollNo;
-    String studentName;
-    String studentDob;
-    String studentStd;
-    String studentAddress;
-	public Student(Integer studentRollNo, String studentName, String studentDob, String studentStd,
-			String studentAddress) {
+	Integer rollNo;
+	String name;
+	String dob;
+	String standard;
+	String address;
+
+	public Student(Integer rollNo, String name, String dob, String standard, String address) {
 		super();
-		this.studentRollNo = studentRollNo;
-		this.studentName = studentName;
-		this.studentDob = studentDob;
-		this.studentStd = studentStd;
-		this.studentAddress = studentAddress;
+		this.rollNo = rollNo;
+		this.name = name;
+		this.dob = dob;
+		this.standard = standard;
+		this.address = address;
 	}
+
 	@Override
 	public String toString() {
-		return "Student [studentRollNo=" + studentRollNo + ", studentName=" + studentName + ", studentDob=" + studentDob
-				+ ", studentStd=" + studentStd + ", studentAddress=" + studentAddress + "]";
+		return "Student [rollNo=" + rollNo + ", name=" + name + ", dob=" + dob + ", standard=" + standard + ", address="
+				+ address + "]";
 	}
-	
+
 }
